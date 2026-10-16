@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Dashboard</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
+<body>
+    <div class="login-form">
+        <form action="#">
+            <h3>Login</h3>
+            <input type="email" placeholder="Enter email" name="" id="email">
+            <input type="password" placeholder="Enter password" id="password">
+            <p id="valid">Invalid password.</p>
+            <button id="login">Login</button>
+        </form>
+    </div>
+
+    <div class="dashboard">
+        <nav class="navigation-bar">
+            <h2>Job Tracker Dashboard</h2>
+            <button id="logout">Logout</button>
+        </nav>
+        <div class="detail-cards">
+            <div class="total">
+                <h4>Total</h4>
+                <span id="Total-count">0</span>
+            </div>
+            <div class="interview">
+                <h4>Interview</h4>
+                <span id="Interview-count">0</span>
+            </div>
+            <div class="offers">
+                <h4>Offers</h4>
+                <span id="Offer-count">0</span>
+            </div>
+            <div class="favorites">
+                <h4>Favorites</h4>
+                <span id="Favorite-count">0</span>
+            </div>
+        </div>
+        <div class="search-section">
+            <div class="top-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Search data....">
+                <button id="search-btn">Search</button>
+            </div>
+            <select name="" id="Search-status">
+                <option value="#" selected disabled>Filter status....</option>
+                <option value="#">Applied</option>
+                <option value="#">Interview</option>
+                <option value="#">Rejected</option>
+                <option value="#">Offer</option>
+            </select>
+            <div class="favorites-list">
+                <ol class="fav-list">
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+        <div class="filter-box">
+            <h3>Search & Filter results</h3>
+        </div>
+        </div>
+    </div>
+    <form action="#">
+        <h3>Application Form</h3>
+        <input type="text" name="" placeholder="Company Name...." id="">
+        <select name="" id="role-option">
+            <option value="#" selected disabled>Choose a role</option>
+            <option value="#">Frontend Developer</option>
+            <option value="#">Support Engineer</option>
+        </select>
+
+        <select name="" id="choose-status">
+            <option value="#" selected disabled>Filter status....</option>
+            <option value="#">Applied</option>
+            <option value="#">Interview</option>
+            <option value="#">Rejected</option>
+            <option value="#">Offer</option>
+        </select>
+        <button id="add-application">Add</button>
+    </form>
+</body>
+</html>
